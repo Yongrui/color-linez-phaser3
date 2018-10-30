@@ -1,9 +1,14 @@
  <!DOCTYPE html>
  <html>
-     <head>
-         <meta charset="utf-8">
-     </head>
-     <body>
-         <script src="build/project.bundle.js" charset="utf-8"></script>
-     </body>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!-- <script src="build/project.bundle.js" charset="utf-8"></script> -->
+		<script src="node_modules/phaser/dist/phaser.js" charset="utf-8"></script>
+		<script src="src/index.js" charset="utf-8" type="module"></script>
+		<script nomodule>
+			alert("This browser doesn't support JS modules, so the example won't work as is. Try the latest version of Chrome, FF or Safari!");
+		</script>
+	</body>
  </html>
